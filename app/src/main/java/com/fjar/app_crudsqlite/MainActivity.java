@@ -26,6 +26,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewbinding.BuildConfig;
 
 import com.fjar.app_crudsqlite.databinding.ActivityMainBinding;
 
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Mensaje", "No se tiene permiso para leer.");
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 225);
             try {
-                Uri uri = Uri.parse("package:" + BuildConfig.APPLICATION_ID);
+                Uri uri = Uri.parse("package:" + BuildConfig.BUILD_TYPE);
                 Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, uri);
                 startActivity(intent);}
             catch (Exception ex){
@@ -117,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setSubtitle("CRUD SQLite-2022");
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.teal_200));
         toolbar.setTitle("SIS 21B");
+        toolbar.setTitle("Gabriela_Rosales SIS21B");
         setSupportActionBar(toolbar);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 

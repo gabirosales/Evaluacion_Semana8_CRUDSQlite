@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Activity_consulta_spinner"
     android:orientation="vertical"
-    android:background="#C5C5C5">
+    android:background="#F3A0BC">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,8 +17,8 @@
         android:textSize="18dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:textColor="#AD0505"
-        android:fontFamily="cursive"
+        android:textColor="#1B1919"
+        android:fontFamily="arial"
         />
 
     <Spinner
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Codigo:"
-            android:textColor="#AD0505"
+            android:textColor="#121010"
             android:textSize="18dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
@@ -55,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Descripcion:"
-            android:textColor="#AD0505"
+            android:textColor="#100F0F"
             android:textSize="18dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="25dp"
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Precio:"
-            android:textColor="#AD0505"
+            android:textColor="#120F0F"
             android:textSize="18dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"

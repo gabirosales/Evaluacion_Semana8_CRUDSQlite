@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -24,17 +25,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
         android:layout_marginTop="55dp"
+        android:layout_marginRight="12dp"
         android:background="@drawable/estilotext"
         android:drawableStart="@drawable/key"
         android:drawablePadding="5dp"
         android:hint="Ingrese el código"
-        android:textColorHint="@color/black"
-        android:textColor="@color/black"
         android:inputType="number"
         android:paddingLeft="25dp"
-        />
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_buscar"
         android:layout_width="match_parent"

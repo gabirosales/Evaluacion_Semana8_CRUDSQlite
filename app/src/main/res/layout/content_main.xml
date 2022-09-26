@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:orientation="vertical"
-    android:background="@color/personalizado"
+    android:background="@color/teal_700"
     >
 
    <TextView
@@ -93,7 +93,7 @@
                 android:shadowDy="-5"
                 android:shadowRadius="5"
                 android:text="GUARDAR OBJETOS"
-                android:textColor="#FFFFFF"
+                android:textColor="#171515"
                 android:textSize="15dp"
                 android:gravity="center"
                 android:paddingLeft="5dp"
@@ -113,7 +113,7 @@
                 android:shadowDy="-5"
                 android:shadowRadius="5"
                 android:text="CONSULTAR POR CÓDIGO"
-                android:textColor="#FFFFFF"
+                android:textColor="#0C0C0C"
                 android:textSize="15dp"
                 android:paddingLeft="5dp"
                 android:layout_marginRight="15dp"
@@ -130,7 +130,7 @@
                 android:shadowDx="-5"
                 android:shadowDy="-5"
                 android:shadowRadius="5"
-                android:textColor="#FFFFFF"
+                android:textColor="#1B1919"
                 android:textSize="15dp"
                 android:paddingLeft="5dp"
                 android:layout_marginRight="15dp"
@@ -148,7 +148,7 @@
                 android:shadowDx="-5"
                 android:shadowDy="-5"
                 android:shadowRadius="5"
-                android:textColor="#FFFFFF"
+                android:textColor="#121111"
                 android:textSize="15dp"
                 android:paddingLeft="5dp"
                 android:layout_marginRight="15dp"
@@ -167,7 +167,7 @@
                 android:shadowDx="-5"
                 android:shadowDy="-5"
                 android:shadowRadius="5"
-                android:textColor="#FFFFFF"
+                android:textColor="#0E0D0D"
                 android:textSize="15dp"
                 android:paddingLeft="5dp"
                 android:layout_marginRight="15dp"
@@ -191,7 +191,7 @@
                 android:shadowDy="-5"
                 android:shadowRadius="5"
                 android:text="Copia de seguridad"
-                android:textColor="#FFFFFF"
+                android:textColor="#1B1919"
                 android:textSize="15dp" />
 
 
