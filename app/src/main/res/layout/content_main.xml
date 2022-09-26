@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:background="@color/personalizado"
+    >
+
+   <TextView
+       android:id="@+id/tv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textAlignment="center"
+       android:text="DATOS DEL ARTICULO"
+       android:textSize="30dp"
+       />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="167dp"
+                android:src="@drawable/pngegg"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/et_codigo"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el código"
+                android:drawableStart="@drawable/linecod"
+                android:layout_margin="5dp"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/et_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:hint="Ingrese la descripción del artículo"
+                android:drawableStart="@drawable/edit"
+                android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/et_precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el precio del artículo"
+                android:inputType="numberDecimal"
+                android:drawableStart="@drawable/money"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/category"
+                android:text="Seleccione una categoria"
+                android:textSize="19dp"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnCategoria"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/estiloespinner"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="15dp"/>
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_guardar"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:onClick="alta"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-5"
+                android:shadowDy="-5"
+                android:shadowRadius="5"
+                android:text="GUARDAR OBJETOS"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/save"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_consultar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:onClick="consultaporcodigo"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-5"
+                android:shadowDy="-5"
+                android:shadowRadius="5"
+                android:text="CONSULTAR POR CÓDIGO"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_consultar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:onClick="consultapordescripcion"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-5"
+                android:shadowDy="-5"
+                android:shadowRadius="5"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:text="CONSULTAR POR DESCRIPCIÓN"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_eliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:onClick="bajaporcodigo"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-5"
+                android:shadowDy="-5"
+                android:shadowRadius="5"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_delete"
+                android:text="BORRAR"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_actualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:onClick="modificacion"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-5"
+                android:shadowDy="-5"
+                android:shadowRadius="5"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/attributes"
+                android:text="Modificar"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Copiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/buttonshape"
+                android:drawableLeft="@drawable/file_copy"
+                android:onClick="CopiaBD"
+                android:paddingLeft="5dp"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-5"
+                android:shadowDy="-5"
+                android:shadowRadius="5"
+                android:text="Copia de seguridad"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
